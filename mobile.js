@@ -1,4 +1,4 @@
-if (innerWidth < 1000) {
+if (innerWidth < 900) {
     document.body.innerHTML = "";
 
     var unavailable = document.createElement("div");

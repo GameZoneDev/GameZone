@@ -53,7 +53,7 @@
 }
 
 .gameDesc {
-    height: 68vh;
+    height: 75vh;
 }
 
 .gameMainInfo {
@@ -81,7 +81,7 @@
 
 .gameInfo {
     width: 90%;
-    height: 450px;
+    height: 460px;
 
     border-radius: 10px;
 
@@ -92,7 +92,7 @@
 
 .gameInfoText {
     width: 90%;
-    height: 325px;
+    height: 335px;
 
     margin: 5%;
 

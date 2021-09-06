@@ -5,6 +5,18 @@ var database = {
         url: "tictactoe.html",
         dimension: "2D",
     },
+    "2": {
+        img: "thumbnails/maze.jpg",
+        name: "Maze",
+        url: "maze.html",
+        dimension: "2D",
+    },
+    "3": {
+        img: "thumbnails/cuberush.jpg",
+        name: "Cube Rush",
+        url: "cuberush.html",
+        dimension: "3D",
+    },
 };
 
 function generateGame(img, name, url, parent) {
@@ -32,9 +44,10 @@ function generateGame(img, name, url, parent) {
 
 function loadAll(parent) {
     var keys = Object.keys(database);
+    var test = keys.reverse();
 
-    for (i = 0; i < keys.length; i++) {
-        generateGame(database[keys[i]].img, database[keys[i]].name, database[keys[i]].url, parent);
+    for (i = 0; i < test.length; i++) {
+        generateGame(database[test[i]].img, database[test[i]].name, database[test[i]].url, parent);
     }
 }
 
@@ -56,7 +69,7 @@ function sortGames(input2, ul2, li2) {
 }
 
 function loadRecommended(parent) {
-    var recommendedKeys = ["1"];
+    var recommendedKeys = ["2", "3"];
 
     for (i = 0; i < recommendedKeys.length; i++) {
         generateGame(database[recommendedKeys[i]].img, database[recommendedKeys[i]].name, database[recommendedKeys[i]].url, parent)
